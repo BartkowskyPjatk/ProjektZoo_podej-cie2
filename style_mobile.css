@@ -1,0 +1,24 @@
+body {
+    font-family: Roboto, serif;
+    padding-top: 46px;
+    color: black;
+    background-color: black;
+    /*overflow-x: hidden;
+    overflow-y: hidden;*/
+}
+.navigation {
+    background-color: black;
+    position: fixed;
+    height: 54px;
+    width: 100vh;
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+#main{
+    height: 87vh;
+    width: 200%;
+    padding-top: 54px;
+    background-image: ;
+}
