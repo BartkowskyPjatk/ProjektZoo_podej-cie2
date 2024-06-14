@@ -3,22 +3,185 @@ body {
     padding-top: 46px;
     color: black;
     background-color: black;
-    /*overflow-x: hidden;
-    overflow-y: hidden;*/
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
-.navigation {
+#navigation {
+    z-index: 5;
     background-color: black;
     position: fixed;
-    height: 54px;
+    height: 55px;
     width: 100vh;
     display: flex;
     top: 0;
     left: 0;
-    z-index: 5;
 }
+
+#navigation #menuTap {
+    z-index: 10;
+    display: block;
+    position: fixed;
+    height: 54px;
+    width: 54px;
+    top: 0;
+    right: 0;
+    opacity: 0;
+
+}
+
+#navigation #hamburgerBox {
+    z-index: 10;
+    height: 26px;
+    width: 32px;
+    position: fixed;
+    top: 17px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-end;
+}
+
+#navigation #hamburgerBox .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
 #main{
     height: 87vh;
     width: 200%;
-    padding-top: 54px;
-    background-image: ;
+    padding-top: 55px;
+    background-image: url("PANTERA_mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+#titleText{
+    margin-left: 5vh;
+    width: 20vh;
+    height: 8vh;
+    text-shadow: 1px 3px 5px rgba(255,255,255,0.6);
+}
+#zooText{
+    font-size: 46px;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+#warszawaText{
+    font-size: 25px;
+    font-family: Roboto,sans-serif;
+    text-align: end;
+    font-weight: 300;
+    padding: 0;
+    margin: -1.5vh 0 0 0;
+}
+#scheduleContainer{
+    height: auto;
+    width: 43%;
+    padding: 2%;
+    background-color: rgba(178,167,150,0.70);
+    border-radius: 10px ;
+    margin: 20% 2% 0 2%;
+    display: flex;
+    align-self: flex-start;
+    font-size: 25px;
+    flex-direction: column;
+}
+#czynneText{
+    height: auto;
+    width: 100%;
+
+}
+#tableTime{
+    width: 100%;
+    border-collapse: collapse;
+    justify-content: space-between;
+}
+#tableTime tr{
+    height: auto;
+    width: 100%;
+}
+#tableTime td{
+    width: 50%;
+    text-align: center;
+    padding: 8px 0;
+}
+#contactRollDown{
+    height: 7%;
+    width: 30%;
+    margin-left: 11%;
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer{
+    height: 99vh;
+    color: white;
+    background-image: url("FLEMINGI.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#contactContainer {
+    height: 100%;
+    width: 60%;
+    margin-left: 22%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+    #contactRollUp{
+    height: 15%;
+    width: 80%;
+    top: 10%;
+    margin: 10%;
+    font-size: 30px;
+    font-weight: 300;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contactInfo{
+    width: 86%;
+    height: auto;
+    margin: 10% 7% 15% 7%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+.contactTitle{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.contactTitle p{
+    margin-top: -5%;
+    font-weight: 200;
+}
+.contactTitle h5{
+    font-weight: 400;
+}
+
