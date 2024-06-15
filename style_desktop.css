@@ -1,0 +1,206 @@
+#menuTap, #hamburgerBox, #menuZoo {
+    display: none;
+}
+body {
+    font-family: Roboto, serif;
+    color: black;
+    background-color: black;
+    /*overflow-x: hidden;*/
+}
+#main {
+    z-index: -2;
+    height: 94vh;
+    width: 100%;
+    margin-top: 7vh;
+    background-image:url("PANTERA.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}#main::before{
+     content:"";
+     top: 0;
+     left: 0;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(217,217,217,0.1);
+     pointer-events: none;
+     z-index: -1;
+ }
+
+#navigation {
+    background-color: black;
+    height: 7vh;
+    font-size: 25px;
+    font-family: Roboto, sans-serif;
+    font-weight: 250;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+#links{
+    padding-left: 3%;
+    display: flex;
+    flex-direction: row;
+}
+.navigationText{
+    color: white;
+    white-space: nowrap;
+    height: 100%;
+    width: auto;
+    padding: 0 5% 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+.navigationText:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    font-weight: 400;
+}
+#titleText{
+    z-index: 2;
+    margin-top: 6vh;
+    margin-left: 10vh;
+    width: 35vh;
+    height: 18vh;
+    text-shadow: 1px 3px 5px rgba(0,0,0,0.45);
+    /*border: 1px solid black;*/
+}
+#zooText{
+    font-size: 70px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+#warszawaText{
+    font-size: 50px;
+    font-weight: 300;
+    text-align: end;
+    padding: 0;
+    margin: -2vh 0 0 0;
+}
+#scheduleContainer{
+    z-index: 2;
+    height: auto;
+    width: 400px;
+    background-color: rgba(178,167,150,0.70);
+    border-radius: 10px ;
+    margin: 0 4% 0 4%;
+    align-self: flex-end;
+    display: flex;
+    font-size: 25px;
+    flex-direction: column;
+    padding: 35px;
+}
+#scheduleContainer *{
+    /*border: 1px solid black;*/
+}
+#czynneText{
+    height: auto;
+    font-weight: 500;
+    margin-bottom: 2vh;
+    width: 100%;
+}
+#tableTime{
+    width: 100%;
+    border-collapse: collapse;
+    justify-content: space-between;
+
+}
+#tableTime tr{
+    height: auto;
+    width: 100%;
+}
+#tableTime td{
+    width: 50%;
+    text-align: center;
+    padding: 10px 0;
+}
+#contactRollDown{
+    z-index: 10;
+    height: 7%;
+    width: 30%;
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    background-color: black;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contactRollDown:hover{
+    background-color: white;
+    color: black;
+}
+#footer{
+    height: 93vh;
+    color: white;
+    background-image: url("FLEMINGI.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#contactContainer {
+    height: 100%;
+    width: 30%;
+    background-color: black;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+#contactRollUp{
+    height: 15%;
+    width: 80%;
+    top: 10%;
+    margin: 10%;
+    font-size: 30px;
+    font-weight: 300;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contactInfo{
+    width: 86%;
+    height: auto;
+    margin: 10% 7% 15% 7%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+.contactTitle{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.contactTitle p{
+    margin-top: -5%;
+    font-weight: 200;
+}
+.contactTitle h5{
+    font-weight: 400;
+}
