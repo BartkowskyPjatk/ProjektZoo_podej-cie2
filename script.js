@@ -9,7 +9,8 @@ const scrollingElement = (document.scrollingElement || document.body);
 const scrollSmoothToBottom = () => {
     console.log("clickDown");
     $(scrollingElement).animate({
-        scrollTop: document.body.scrollHeight
+        scrollTop: document.body.scrollHeight,
+        scrollLeft: 0
     }, 500);
 };
 const scrollSmoothToTop = () => {

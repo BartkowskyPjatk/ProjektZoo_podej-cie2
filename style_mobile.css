@@ -6,6 +6,7 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
 #navigation {
     z-index: 5;
     background-color: black;
@@ -16,7 +17,6 @@ body {
     top: 0;
     left: 0;
 }
-
 #navigation #menuTap {
     z-index: 10;
     display: block;
@@ -28,7 +28,6 @@ body {
     opacity: 0;
 
 }
-
 #navigation #hamburgerBox {
     z-index: 10;
     height: 26px;
@@ -41,7 +40,6 @@ body {
     justify-content: space-between;
     align-self: flex-end;
 }
-
 #navigation #hamburgerBox .line {
     display: block;
     height: 4px;
@@ -80,10 +78,11 @@ body {
     font-size: 25px;
     font-family: Roboto,sans-serif;
     text-align: end;
-    font-weight: 300;
+    font-weight: 400;
     padding: 0;
     margin: -1.5vh 0 0 0;
 }
+
 #scheduleContainer{
     height: auto;
     width: 43%;
@@ -115,6 +114,54 @@ body {
     text-align: center;
     padding: 8px 0;
 }
+
+#menuZoo{
+    height: 80%;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    background-color: rgba(178,167,150,0.70);
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+#zooTextNavigation{
+    height: 10%;
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#zooNavigation{
+    height: 80%;
+    width: 80%;
+    padding: 0 0 5% 0;
+    margin: 5% 10% 0 10%;
+    border-top: 1px solid black;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+#menuZoo *{
+    /*border: 1px solid black;*/
+}
+#zooNavigation a{
+    height: 18%;
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+#zooNavigation a:hover{
+    font-weight: 500;
+}
 #contactRollDown{
     height: 7%;
     width: 30%;
@@ -127,6 +174,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 #footer{
     height: 99vh;
     color: white;
@@ -144,7 +192,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-    #contactRollUp{
+#contactRollUp{
     height: 15%;
     width: 80%;
     top: 10%;
